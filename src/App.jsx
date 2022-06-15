@@ -6,7 +6,7 @@ const App = () => {
       nombre: 'Alejandro',
       apellido: 'Dolina',
       dni: 5515237,
-      otra: 'asdasd'
+      otro: 'Otro dato'
     },
     {
       nombre: 'Ernesto',
@@ -17,7 +17,7 @@ const App = () => {
     {
       nombre: 'Roberto',
       apellido: 'Arlt',
-      dni: 2142377,
+      dni: 1142377,
       nacimiento: '25/01/1939'
     }
   ];

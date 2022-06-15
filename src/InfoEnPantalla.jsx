@@ -1,20 +1,21 @@
-const divStyles = { backgroundColor: 'lightgray', margin: '0.5rem', padding: '0.5rem' };
+const divContainerStyles = { display: 'flex', gap: '1rem', alignItems: 'flex-end' };
+const divItemStyles = { backgroundColor: 'lightgray', margin: '0.5rem', padding: '0.5rem' };
 const preTitleStyles = { backgroundColor: 'white', display: 'inline-block', padding: '0.5rem', textDecoration: 'underline' };
 
 const InfoEnPantalla = ({ arr, cabeceras }) => {
   return (
-    <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-end' }}>
+    <div style={divContainerStyles}>
       <div>
-        <div style={divStyles}>
+        <div style={divItemStyles}>
           <pre style={preTitleStyles}>arr:</pre>
           <pre>{JSON.stringify(arr, null, 2)}</pre>
         </div>
-        <div style={divStyles}>
+        <div style={divItemStyles}>
           <pre style={preTitleStyles}>cabeceras:</pre>
           <pre>{JSON.stringify(cabeceras)}</pre>
         </div>
       </div>
-      <div style={divStyles}>
+      <div style={divItemStyles}>
         <pre style={preTitleStyles}>código:</pre>
         <pre>
           {`
