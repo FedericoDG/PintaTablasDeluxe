@@ -1,4 +1,3 @@
-import './App.css';
 import PintaTablas from './PintaTablas';
 
 const App = () => {

@@ -1,4 +1,5 @@
 import shortid from 'shortid'; // Para crear ids únicos necesarios para las keys de los métodos .map
+import InfoEnPantalla from './InfoEnPantalla';
 
 const PintaTablas = ({ arr }) => {
   // Esta función habría que sacarla del componente y ponerna en una carpeta "utils" o "helpers" o lo que se te ocurra.
@@ -16,10 +17,9 @@ const PintaTablas = ({ arr }) => {
 
   return (
     <>
-      <pre>{JSON.stringify(arr, null, 2)}</pre>
-      <br />
-      <pre>{JSON.stringify(cabeceras)}</pre>
-      <br />
+      {/* ELIMINAR */}
+      <InfoEnPantalla arr={arr} cabeceras={cabeceras} />
+      {/* ELIMINAR */}
 
       <table>
         <thead>
