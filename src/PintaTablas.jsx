@@ -8,7 +8,6 @@ const PintaTablas = ({ arr }) => {
     cabeceras = cabeceras.flat();
     cabeceras = new Set(cabeceras);
     cabeceras = Array.from(cabeceras);
-    console.log(cabeceras);
 
     return cabeceras;
   };
