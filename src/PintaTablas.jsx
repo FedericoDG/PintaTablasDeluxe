@@ -3,12 +3,12 @@ import shortid from 'shortid'; // Para crear ids únicos necesarios para las key
 const PintaTablas = ({ arr }) => {
   // Esta función habría que sacarla del componente y ponerna en una carpeta "utils" o "helpers" o lo que se te ocurra.
   const creaCabeceras = (array) => {
-    let cabeceras = [];
-    array.forEach((el) => cabeceras.push(Object.keys(el)));
+    let cabeceras = array.map((el) => Object.keys(el));
 
     cabeceras = cabeceras.flat();
     cabeceras = new Set(cabeceras);
     cabeceras = Array.from(cabeceras);
+    console.log(cabeceras);
 
     return cabeceras;
   };
